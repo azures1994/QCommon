@@ -18,7 +18,11 @@ set(SRC_LIST )
 add_subdirectory(QCommon)
 
 set(LIB_LIST QCommon)
+
+include_directories(./)
+aux_source_directory(Test/ SRC_LIST)
 set(SRC_LIST ${SRC_LIST} main.cpp)
+message("SRC_LIST: ${SRC_LIST}")
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 target_link_libraries(${PROJECT_NAME} ${LIB_LIST})
