@@ -8,7 +8,7 @@
         "name": "(gdb) Launch",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/bin/QCommon",
+        "program": "${workspaceFolder}/install/bin/test_QCommon",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
