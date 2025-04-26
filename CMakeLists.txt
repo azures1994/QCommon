@@ -13,7 +13,9 @@ endif()
 set(LIB_LIST )
 set(SRC_LIST )
 
-set(SRC_LIST main.cpp)
+aux_source_directory(QCommon/ SRC_LIST)
+
+set(SRC_LIST ${SRC_LIST} main.cpp)
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 target_link_libraries(${PROJECT_NAME} ${LIB_LIST})
